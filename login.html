@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Login | Point-of-Sale</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+	
+
+	<div class="container bg-red-500">
+		<div class="container-flex">
+
+			<div class="flex-left">
+				<div class="flex-img">
+					<img src="logo_dids.png">
+				</div>
+
+			</div>
+			<div class="flex-right">
+				<h1>Welcome to Did's Store POS</h1>
+				<p>Lorem, ipsum dolor sit amet consectetur animimodi nemo?</p>
+				<div class="form">
+					<form method="POST" action="" autocomplete="off">
+
+						<div class="form-control">
+							<input type="text" id="username" name="username" required />
+							<label>Username</label>
+						</div>
+
+						<div class="form-control">
+							<input type="password" id="password" name="password" required />
+							<label>Password</label>
+						</div>
+						<div class="div-remember">
+						<input type="checkbox" value="lsRememberMe" id="rememberMe"> 
+						<label  class="remeber"for="rememberMe">Remember me</label>
+
+						</div>
+
+					
+
+
+
+						<div>
+
+							<button type="submit" name="submit" value="Login" onclick="lsRememberMe() " class="button-65" role="button">Sign in</button>
+						</div>
+
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+<script type="text/javascript">
+	const inputs = document.querySelectorAll('.form-control input');
+	const labels = document.querySelectorAll('.form-control label');
+
+	labels.forEach(label => {
+		label.innerHTML = label.innerText
+			.split('')
+			.map((letter, idx) => `<span style="
+        transition-delay: ${idx * 50}ms
+      ">${letter}</span>`)
+			.join('');
+	});
+
+
+</script>
+
+
+</html>
